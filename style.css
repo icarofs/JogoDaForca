@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  background: #2d2e2e;
+}
+button {
+  cursor: pointer;
+}
+
+#box {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+}
+
+#btnDica {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#cabeca {
+  display: none;
+  position: absolute;
+  left: 180px;
+  top: 40px;
+  width: 55px;
+  height: 55px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #484349;
+  border: 1px solid #000;
+}
+
+#braco_dir {
+  display: none;
+  position: absolute;
+  left: 140px;
+  top: 100px;
+  width: 18px;
+  height: 60px;
+  background: #484349;
+  border: 1px solid black;
+  transform: rotate(30deg);
+}
+
+#braco_es {
+  display: none;
+  position: absolute;
+  left: 260px;
+  top: 100px;
+  width: 18px;
+  height: 60px;
+  background: #484349;
+  border: 1px solid #000;
+  transform: rotate(-30deg);
+}
+
+#perna_dir {
+  display: none;
+  position: absolute;
+  left: 168px;
+  top: 175px;
+  width: 22px;
+  height: 72px;
+  background: rgb(110, 156, 241);
+  border: 1px solid #000;
+  transform: rotate(15deg);
+}
+
+#perna_es {
+  display: none;
+  position: absolute;
+  left: 228px;
+  top: 175px;
+  width: 22px;
+  height: 72px;
+  background: rgb(110, 156, 241);
+  border: 1px solid #000;
+  transform: rotate(-15deg);
+}
+
+#corpo {
+  display: none;
+  position: absolute;
+  left: 179px;
+  top: 100px;
+  width: 58px;
+  height: 70px;
+  background: #4bb893;
+  border: 1px solid #000;
+}
+
+#forca_poste {
+  position: absolute;
+  left: 310px;
+  top: 3px;
+  width: 50px;
+  height: 480px;
+  background: #18a999;
+}
+
+#forca_aste {
+  position: absolute;
+  left: 150px;
+  top: 3px;
+  height: 30px;
+  width: 200px;
+  background: #18a999;
+}
+
+#corda1 {
+  position: absolute;
+  left: 202px;
+  top: 3px;
+  height: 35px;
+  width: 10px;
+  background: #484349;
+}
+
+#corda2 {
+  position: absolute;
+  left: 183px;
+  top: 45px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: white;
+  border: 5px solid #484349;
+}
+
+#main_container {
+  position: absolute;
+  left: 10px;
+  top: 400px;
+  border: 5px solid #18a999;
+  width: 600px;
+  height: 360px;
+  background-color: #109648;
+}
+
+.keyboard_container {
+  position: absolute;
+  display: block;
+  left: 370px;
+  top: 100px;
+  border: 1px solid #109648;
+  width: 200px;
+  height: 250px;
+  background-color: #109648;
+}
+
+#wordContainer {
+  top: 10px;
+  left: 10px;
+  width: 355px;
+  height: 345px;
+}
+
+#tries_container {
+  left: 30px;
+}
+
+.btn_erro {
+  background-color: rgb(255, 0, 0);
+}
+
+.btn_acerto {
+  background-color: rgb(142, 221, 142);
+}
+
+.lbl_palavra {
+  left: 15px;
+  top: 10px;
+  margin-left: 15px;
+  text-align: center;
+  color: #f7f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.lbl_chances {
+  left: 150px;
+  top: 265px;
+  position: absolute;
+  text-align: center;
+  color: #f7f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#lblChances1 {
+  left: 1px;
+}
+
+.lbl_resultado {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 275px;
+  top: 40px;
+  text-align: left;
+  color: rgb(142, 221, 142);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#welcomeScreen {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 800px;
+  height: 1000px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+#lblDescription {
+  margin-top: 200px;
+  margin-left: 100px;
+  position: absolute;
+  text-align: center;
+  word-wrap: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: #8af3ff;
+}
+
+.btnGame {
+  width: 80px;
+  height: 50px;
+  color: #484349;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #8af3ff;
+  border: none;
+  cursor: pointer;
+}
+
+#btnStart {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  left: 200px;
+  top: 500px;
+}
